@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pmp.proyecto.grud.ProyectoController">
+   <children>
+      <Label fx:id="LblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="600.0" text="REGISTROS PERSONALES" />
+      <TableView fx:id="TablaRegistro" layoutX="12.0" layoutY="45.0" prefHeight="286.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="TcId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="TcNombre" prefWidth="98.0" text="Nombre" />
+            <TableColumn fx:id="TcEstado" prefWidth="76.0" text="Estado" />
+            <TableColumn fx:id="TcCorreo" prefWidth="84.0" text="Correo" />
+            <TableColumn fx:id="TcMeses" prefWidth="85.0" text="Meses" />
+            <TableColumn fx:id="TcArea" prefWidth="77.0" text="Area" />
+            <TableColumn fx:id="TcPais" prefWidth="78.0" text="Pais" />
+        </columns>
+      </TableView>
+      <Button fx:id="BtnVisualizar" layoutX="31.0" layoutY="347.0" mnemonicParsing="false" onAction="#BtnVisualizar_onclick" prefHeight="33.0" prefWidth="123.0" text="Visualizar" />
+      <Button fx:id="BtnAgregar" layoutX="167.0" layoutY="347.0" mnemonicParsing="false" onAction="#BtnAgregar_onclick" prefHeight="33.0" prefWidth="123.0" text="Agregar" />
+      <Button fx:id="BtnActualizar" layoutX="300.0" layoutY="347.0" mnemonicParsing="false" onAction="#BtnActualizar_onclick" prefHeight="33.0" prefWidth="123.0" text="Actualizar" />
+      <Button fx:id="BtnEliminar" layoutX="433.0" layoutY="347.0" mnemonicParsing="false" onAction="#BtnEliminar_onclick" prefHeight="33.0" prefWidth="123.0" text="Eliminar" />
+   </children>
+</AnchorPane>

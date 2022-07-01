@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pmp.proyecto.grud.RegistroController">
+   <children>
+      <Label fx:id="LblTitulo" layoutX="219.0" layoutY="14.0" text="NUEVO REGISTRO">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="53.0" text="Codigo:" textAlignment="CENTER" />
+      <TextField fx:id="TxtCodigo" layoutX="241.0" layoutY="49.0" />
+      <Label layoutX="159.0" layoutY="97.0" text="Nombre:" textAlignment="CENTER" />
+      <TextField fx:id="TxtNombre" layoutX="241.0" layoutY="93.0" />
+      <Label layoutX="163.0" layoutY="135.0" text="Correo:" textAlignment="CENTER" />
+      <TextField fx:id="TxtCorreo" layoutX="241.0" layoutY="131.0" />
+      <Label layoutX="165.0" layoutY="178.0" text="Meses:" textAlignment="CENTER" />
+      <TextField fx:id="TxtMeses" layoutX="241.0" layoutY="174.0" />
+      <Label layoutX="176.0" layoutY="219.0" text="Area:" textAlignment="CENTER" />
+      <TextField fx:id="TxtArea" layoutX="241.0" layoutY="215.0" />
+      <Label layoutX="178.0" layoutY="262.0" text="Pais:" textAlignment="CENTER" />
+      <TextField fx:id="TxtPais" layoutX="241.0" layoutY="258.0" />
+      <Label layoutX="163.0" layoutY="305.0" text="Estado:" />
+      <RadioButton fx:id="RdbInactivo" layoutX="336.0" layoutY="304.0" mnemonicParsing="false" text="Inactivo">
+         <toggleGroup>
+            <ToggleGroup fx:id="Activo" />
+         </toggleGroup></RadioButton>
+      <Button fx:id="BtnConfirmar" layoutX="149.0" layoutY="341.0" mnemonicParsing="false" onAction="#BtnConfirmar_onclicked" prefHeight="33.0" prefWidth="124.0" text="Confirmar" />
+      <Button fx:id="BtnCancelar" layoutX="288.0" layoutY="341.0" mnemonicParsing="false" onAction="#BtnCancelar_onclicked" prefHeight="33.0" prefWidth="124.0" text="Cancelar" />
+      <RadioButton fx:id="RdbActivo" layoutX="241.0" layoutY="304.0" mnemonicParsing="false" text="Activo" toggleGroup="$Activo" />
+   </children>
+</AnchorPane>
